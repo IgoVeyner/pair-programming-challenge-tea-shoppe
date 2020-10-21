@@ -24,7 +24,7 @@ Tea names need to be unique, additionally a tea shouldn't be created without a n
 
 You'll need to build out a teas controller with these actions: index, show, new, create. The index and show should be business as usual and show teas. If you choose to build routes using resources, make sure you don't include extraneous routes.
 
-Creating a new tea should associate that tea with the user. If the tea is created without a name, category, or a non-unique name then it needs to re-render the form to create a tea.
+If the tea is created without a name, category, or a non-unique name then it needs to re-render the form to create a tea.
 
 ## BONUS
 
