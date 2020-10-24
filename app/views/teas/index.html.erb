@@ -1,0 +1,12 @@
+<%= form_tag(teas_path, method: :get) do %>
+  <%= text_field_tag :'category' %>
+
+  <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
+  <%= submit_tag "Search" %>
+<% end %>
+
+<ul>
+  <% @teas.each do |tea| %>
+    <li><%= link_to  tea.name, tea_path(tea) %></li>
+  <% end %>
+</ul>
